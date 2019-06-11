@@ -1,0 +1,44 @@
+.mission {
+  // position: absolute;
+  display: block;
+  max-width: 1366px;
+  height: 545px;
+  margin: 0 auto;
+
+  .mission-tittle {
+    position: absolute;
+    display: block;
+    font-size: 50px;
+    line-height: 56px;
+    letter-spacing: -25;
+    left: 50%;
+    top: 75px;
+    transform: translateX(-50%);
+  }
+
+  .mission-text {
+    position: absolute;
+    // display: block;
+    font-family: "Mada Light";
+    font-size: 22px;
+    width: 55%;
+    height: 290px;
+    line-height: 40px;
+    // margin: 0 auto;
+    // top: 50%;
+    left: 50%;
+    top: 50%;
+    // transform: translateX(-50%);
+    transform: translate(-50%, -40%);
+
+    &:before {
+      content: "”";
+      position: absolute;
+      display: block;
+      left: -45px;
+      font-size: 61px;
+      font-family: "Mada", sans-serif;
+      font-weight: 900;
+    }
+  }
+}

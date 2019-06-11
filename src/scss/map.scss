@@ -1,0 +1,46 @@
+.map {
+  display: block;
+  height: 490px;
+  max-width: 1366px;
+  margin: 0 auto;
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+  background-position-x: 80%;
+  .map-sign {
+    position: absolute;
+    display: block;
+    top: 33%;
+    left: 17%;
+  }
+  .map-text {
+    position: absolute;
+    display: block;
+    // width: 270px;
+    // height: 230px;
+    width: 20%;
+    height: 45%;
+    top: 33%;
+    left: 20%;
+    .company-name {
+      font-family: "Mada", sans-serif;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 29px;
+      letter-spacing: -25;
+      margin: 1% 0;
+    }
+    .company-adress {
+      font-family: "Mada", sans-serif;
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 24px;
+      margin: 8% 0%;
+    }
+    .map-description {
+      font-family: "Mada", sans-serif;
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 24px;
+    }
+  }
+}

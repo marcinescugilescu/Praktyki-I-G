@@ -1,0 +1,18 @@
+body {
+  font-family: "homenaje", sans-serif;
+  width: 100%;
+}
+.wrapper {
+  // max-width: $container-max-width;
+  margin: 0 auto;
+  position: relative;
+  width: inherit;
+  height: inherit;
+
+  // padding-left: $space;
+  // padding-right: $space;
+  // @include min-media($bpoint-tab) {
+  //   padding-left: 2 * $space;
+  //   padding-right: 2 * $space;
+  // }
+}

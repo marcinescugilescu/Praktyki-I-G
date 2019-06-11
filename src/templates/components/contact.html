@@ -1,0 +1,40 @@
+<section class='contact' data-js="contact">
+    <div class='wrapper'>
+        <button class="btn-contact">Let us how to contact You
+            <span>&#8593<span></button>
+                <div class="contact-tittle">Contact</div>
+                <p class="contact-text">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae.</p>
+
+                <form class='form-contact' novalidate="novalidate">
+
+                    <div class='form-block'>
+                        <div class='form-el'>
+                            <label for='name'>Hello! I'm</label>
+                            <input required="required" name='name' type='text' pattern="[a-z]{1,15}" placeholder='Your Name'/>
+                            {# <span class='form-error-msg'>Wrong text!</span> #}
+                            <label for='company'>and I represent</label>
+                            <input required="required" name='company-name' type='text' placeholder='Company name'/>
+                            {# <span class='form-error-msg'>Wrong email!</span> #}
+                        </div>
+                        <div class='form-el'>
+                            <label for='phone'>Call me at</label>
+                            <input required="required" name='phone' type='text' pattern='(\(?(\+|00)?48\)?)?[ -]?\d{3}[ -]?\d{3}[ -]?\d{3}' placeholder='You telephone number'/>
+                            {# <span class='form-error-msg'>Wrong email!</span> #}
+                            <label for='email'>or send an email to
+                            </label>
+                            <input required="required" name='email' type='email' placeholder='Your emai adress'/>
+                        </div>
+                        <div class='form-el'>
+                            <label for='cbox'></label>
+                            <input required="required" name='cbox' id='cbox' type='checkbox'/>
+                            <label for='field_cbox'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</label>
+                            {# <span class='form-error-msg'>Check something!</span> #}
+                        </div>
+                        <div class='form-el'>
+                            <button class='btn' type='submit'>send details</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>

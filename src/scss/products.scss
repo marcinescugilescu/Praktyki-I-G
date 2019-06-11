@@ -1,0 +1,89 @@
+.products {
+  // position: absolute;
+  display: block;
+  max-width: 1366px;
+  height: 1040px;
+  margin: 0 auto;
+
+  .wrapper {
+    height: 100%;
+    width: 100%;
+
+    .products-tittle {
+      position: absolute;
+      display: block;
+      font-size: 50px;
+      letter-spacing: -0.25px;
+      left: 50%;
+      top: 85px;
+      transform: translateX(-50%);
+    }
+    .products-text {
+      position: absolute;
+      font-family: "Mada Light";
+      font-size: 22px;
+      width: 50%;
+      text-align: center;
+      // height: 290px;
+      line-height: 40px;
+      // margin: 0 auto;
+      // top: 50%;
+      left: 50%;
+      top: 17%;
+      transform: translateX(-50%);
+      // transform: translate(-50%, 50%);
+    }
+    .icons {
+      position: absolute;
+      top: 250px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 600px;
+      width: 700px;
+      display: flex;
+      justify-content: space-around;
+      align-content: space-around;
+      flex-wrap: wrap;
+
+      .icon {
+        width: 139px;
+        fill: red;
+        height: 139px;
+        flex-basis: 150px;
+        color: black;
+        // background-image: url('../img/001-malware.png');
+        // background: greenyellow;
+        // background-color: red;
+        text-align: center;
+      }
+      .icon:hover {
+        background: greenyellow;
+      }
+
+      // .icon1{
+      //     width: 139px;
+      //     fill: red;
+      //     height: 139px;
+      //     flex-basis: 150px;
+
+      //     color: black;
+      //     background-repeat: no-repeat;
+      //     background-image: url('../img/001-malware.png');
+      //     // background: greenyellow;
+      //     // background-color: red;
+      //     text-align: center;
+      //     transition: 0.2s linear;
+      // }
+      // .icon1:hover{
+      //    position:absolute;
+      //    display: block;
+      // //    top: 0px;
+      // //    left: 0px;
+      //    width: 196px;
+      //    height: 390px;
+      //    background-color: #62c017;
+      //    background-image: url('../img/001-malware-white.png')
+      // }
+    }
+  }
+}
