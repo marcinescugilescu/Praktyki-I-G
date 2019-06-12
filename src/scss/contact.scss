@@ -9,7 +9,7 @@
     line-height: 25px;
     width: 265px;
     height: 45px;
-    right: 20%;
+    right: 13%;
     top: 13%;
     z-index: 126;
     color: $color-1;
@@ -25,7 +25,6 @@
     span {
       position: absolute;
       display: block;
-
       right: 20px;
       top: 8px;
       width: 15px;
@@ -47,10 +46,35 @@
     width: 760px;
     height: 85px;
     left: 21%;
-    top: 22%;
+    top: 28%;
     font-family: "Mada light";
     letter-spacing: -0.25px;
     font-size: 22px;
     line-height: 30px;
+  }
+  .form-contact {
+    .form-block {
+      position: absolute;
+      display: block;
+      width: 850px;
+      height: 80px;
+      background-color: $color-1;
+      top: 48%;
+      left: 21%;
+      // transform: translateX(-50%);
+      .form-name-label,
+      .form-company-label,
+      .form-phone-label,
+      .form-email-label {
+        font-family: "Mada light", sans-serif;
+        font-size: 30px;
+        line-height: 42px;
+        letter-spacing: -0.25px;
+      }
+      #name {
+        border: none;
+        border-bottom: 2px solid #989898;
+      }
+    }
   }
 }

@@ -27,19 +27,19 @@
                 <ul class='header-nav'>
 
                     <li>
-                        <a href="#">MISSION</a>
+                        <a href="#mission">MISSION</a>
                     </li>
                     <li class="line"></li>
                     <li>
-                        <a href="#">CLIENTS</a>
+                        <a href="#clients">CLIENTS</a>
                     </li>
                     <li class="line"></li>
                     <li>
-                        <a href="#">PRODUCTS</a>
+                        <a href="#products">PRODUCTS</a>
                     </li>
                     <li class="line"></li>
                     <li>
-                        <a href="#">CONTACT</a>
+                        <a href="#contact">CONTACT</a>
                     </li>
 
                 </ul>
@@ -62,7 +62,7 @@
     </div>
 </section>
 
-        <section class='mission' data-js="mission">
+        <section class='mission' id="mission" data-js="mission">
     <div class='wrapper'>
         <div class="mission-tittle">
             Mission</div>
@@ -71,9 +71,9 @@
     </div>
 </section>
 
-        <section class='clients' data-js="clients">
+        <section class='clients' id="clients" data-js="clients">
     <div class='wrapper'>
-        <div class="tab-img"><img src="../img/iPod_Mockup.png" alt="tab image"></div>
+        <div class="tab-img"><img src="../img/iPod2.png" alt="tab image"></div>
         <div class="clients-tittle">Clients</div>
         <div class="clients-container">
             <p class="clients-text">
@@ -87,25 +87,28 @@
     </div>
 </section>
 
-        <section class='products' data-js="products">
+        <section class='products' id="products" data-js="products">
     <div class='wrapper'>
         <div class="products-tittle">Products</div>
         <p class="products-text">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
 
         <div class="icons">
-            <div class="icon"><img src="../img/001-malware.png" alt=""></div>
-            <div class="icon"><img src="../img/002-smartphone-1.png" alt=""></div>
-            <div class="icon"><img src="../img/003-folder.png" alt=""></div>
-            <div class="icon"><img src="../img/004-malware.png" alt=""></div>
-            <div class="icon"><img src="../img/005-pendrive.png" alt=""></div>
-            <div class="icon"><img src="../img/006-network.png" alt=""></div>
-            <div class="icon"><img src="../img/007-smartphone copy2.png" alt=""></div>
-            <div class="icon"><img src="../img/008-fishing.png" alt=""></div>
-            <div class="icon"><img src="../img/009-data-protection.png" alt=""></div>
-            <div class="icon"><img src="../img/010-credit-card.png" alt=""></div>
-            <div class="icon"><img src="../img/011-hacker.png" alt=""></div>
-            <div class="icon"><img src="../img/012-firewall.png" alt=""></div>
+            <div class="icon" id="0"><img src="../img/001-malware.png" alt=""></div>
+            <div class="icon" id="1"><img src="../img/002-smartphone-1.png" alt=""></div>
+            <div class="icon" id="2"><img src="../img/003-folder.png" alt=""></div>
+            <div class="icon" id="3"><img src="../img/004-malware.png" alt=""></div>
+
+            <div class="icon" id="4"><img src="../img/005-pendrive.png" alt=""></div>
+            <div class="icon" id="5"><img src="../img/006-network.png" alt=""></div>
+            <div class="icon" id="6"><img src="../img/007-smartphone-2.png" alt=""></div>
+            <div class="icon" id="7"><img src="../img/008-fishing.png" alt=""></div>
+
+            <div class="icon" id="8"><img src="../img/009-data-protection.png" alt=""></div>
+            <div class="icon" id="9"><img src="../img/010-credit-card.png" alt=""></div>
+            <div class="icon" id="10"><img src="../img/011-hacker.png" alt=""></div>
+            <div class="icon" id="11"><img src="../img/012-firewall.png" alt=""></div>
+
         </div>
     </div>
 </section>
@@ -126,7 +129,7 @@
     </div>
 </section>
 
-        <section class='contact' data-js="contact">
+        <section class='contact' id="contact" data-js="contact">
     <div class='wrapper'>
         <button class="btn-contact">Let us how to contact You
             <span>&#8593<span></button>
@@ -138,18 +141,18 @@
 
                     <div class='form-block'>
                         <div class='form-el'>
-                            <label for='name'>Hello! I'm</label>
-                            <input required="required" name='name' type='text' pattern="[a-z]{1,15}" placeholder='Your Name'/>
-                            
-                            <label for='company'>and I represent</label>
+                            <label for='name' class="form-name-label">Hello! I'm</label>
+                            <input required="required" name='name' type='text' pattern="[a-z]{1,15}" placeholder='Your Name' id="name"/>
+                            <span class='form-error-msg'>Wrong text!</span>
+                            <label for='company' class="form-company-label">and I represent</label>
                             <input required="required" name='company-name' type='text' placeholder='Company name'/>
                             
                         </div>
                         <div class='form-el'>
-                            <label for='phone'>Call me at</label>
+                            <label for='phone' class="form-phone-label">Call me at</label>
                             <input required="required" name='phone' type='text' pattern='(\(?(\+|00)?48\)?)?[ -]?\d{3}[ -]?\d{3}[ -]?\d{3}' placeholder='You telephone number'/>
                             
-                            <label for='email'>or send an email to
+                            <label for='email' class="form-email-label">or send an email to
                             </label>
                             <input required="required" name='email' type='email' placeholder='Your emai adress'/>
                         </div>

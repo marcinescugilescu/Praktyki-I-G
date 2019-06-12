@@ -253,7 +253,7 @@ body {
     height: 95px;
     margin-top: 45px;
     color: white;
-    font-family: Mada Light;
+    font-family: "Mada Light";
     letter-spacing: 0.25px; }
 
 .mission {
@@ -312,7 +312,7 @@ body {
     position: absolute;
     display: block;
     top: 200px;
-    left: 120px; }
+    right: 60%; }
   .clients .clients-container {
     position: absolute;
     width: 560px;
@@ -377,17 +377,17 @@ body {
       text-align: center;
       line-height: 40px;
       left: 50%;
-      top: 17%;
+      top: 15%;
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%); }
     .products .wrapper .icons {
       position: absolute;
-      top: 250px;
+      top: 26%;
       left: 50%;
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%);
-      height: 600px;
-      width: 700px;
+      height: 690px;
+      width: 760px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -398,15 +398,34 @@ body {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
       .products .wrapper .icons .icon {
-        width: 139px;
+        width: 190px;
         fill: red;
-        height: 139px;
-        -ms-flex-preferred-size: 150px;
-            flex-basis: 150px;
-        color: black;
-        text-align: center; }
-      .products .wrapper .icons .icon:hover {
-        background: greenyellow; }
+        height: 230px;
+        text-align: center;
+        -ms-flex-preferred-size: 190px;
+            flex-basis: 190px;
+        color: black; }
+      .products .wrapper .icons .icon-over {
+        display: block;
+        position: absolute;
+        background-color: #62c017;
+        margin-top: -40px;
+        width: 190px;
+        height: 380px;
+        z-index: 130;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-position: 50% 16.5%; }
+        .products .wrapper .icons .icon-over p {
+          margin-top: 115%;
+          color: white;
+          font-family: "Mada";
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 18px;
+          letter-spacing: -0.25px;
+          padding: 14px;
+          text-align: left; }
 
 .map {
   display: block;
@@ -457,7 +476,7 @@ body {
     line-height: 25px;
     width: 265px;
     height: 45px;
-    right: 20%;
+    right: 13%;
     top: 13%;
     z-index: 126;
     color: white;
@@ -491,11 +510,30 @@ body {
     width: 760px;
     height: 85px;
     left: 21%;
-    top: 22%;
+    top: 28%;
     font-family: "Mada light";
     letter-spacing: -0.25px;
     font-size: 22px;
     line-height: 30px; }
+  .contact .form-contact .form-block {
+    position: absolute;
+    display: block;
+    width: 850px;
+    height: 80px;
+    background-color: white;
+    top: 48%;
+    left: 21%; }
+    .contact .form-contact .form-block .form-name-label,
+    .contact .form-contact .form-block .form-company-label,
+    .contact .form-contact .form-block .form-phone-label,
+    .contact .form-contact .form-block .form-email-label {
+      font-family: "Mada light", sans-serif;
+      font-size: 30px;
+      line-height: 42px;
+      letter-spacing: -0.25px; }
+    .contact .form-contact .form-block #name {
+      border: none;
+      border-bottom: 2px solid #989898; }
 
 .footer {
   display: block;

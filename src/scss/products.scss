@@ -29,37 +29,120 @@
       // margin: 0 auto;
       // top: 50%;
       left: 50%;
-      top: 17%;
+      top: 15%;
       transform: translateX(-50%);
       // transform: translate(-50%, 50%);
     }
     .icons {
       position: absolute;
-      top: 250px;
+      top: 26%;
       left: 50%;
       transform: translateX(-50%);
-      height: 600px;
-      width: 700px;
+      height: 690px;
+      width: 760px;
       display: flex;
       justify-content: space-around;
       align-content: space-around;
       flex-wrap: wrap;
 
       .icon {
-        width: 139px;
+        // position: absolute;
+        // width: 139px;
+        width: 190px;
         fill: red;
-        height: 139px;
-        flex-basis: 150px;
+        // height: 139px;
+        height: 230px;
+        // margin-top: 5%;
+        text-align: center;
+
+        // line-height: 100%;
+        flex-basis: 190px;
         color: black;
         // background-image: url('../img/001-malware.png');
         // background: greenyellow;
         // background-color: red;
-        text-align: center;
-      }
-      .icon:hover {
-        background: greenyellow;
       }
 
+      // .icon1 {
+      //   top: 0%;
+      //   left: 0%;
+      // }
+      // .icon2 {
+      //   top: 0%;
+      //   left: 25%;
+      // }
+      // .icon3 {
+      //   top: 0%;
+      //   left: 50%;
+      // }
+      // .icon4 {
+      //   top: 0%;
+      //   left: 75%;
+      // }
+      // .icon5 {
+      //   top: 33%;
+      //   left: 0%;
+      // }
+      // .icon6 {
+      //   top: 33%;
+      //   left: 25%;
+      // }
+      // .icon7 {
+      //   top: 33%;
+      //   left: 50%;
+      // }
+      // .icon8 {
+      //   top: 33%;
+      //   left: 75%;
+      // }
+      // .icon:hover {
+      //   height: 250px;
+      //   background: greenyellow;
+      // }
+      // .icon:hover:before {
+      //   background: greenyellow;
+      //   width: 139px;
+      //   height: 180px;
+      // }
+      .icon-over {
+        display: block;
+        position: absolute;
+        background-color: #62c017;
+        margin-top: -40px;
+        width: 190px;
+        height: 380px;
+        z-index: 130;
+        cursor: pointer;
+        background-repeat: no-repeat;
+
+        background-position: 50% 16.5%;
+        // text-align: center;
+        p {
+          margin-top: 115%;
+          color: $color-1;
+          font-family: "Mada";
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 18px;
+          letter-spacing: -0.25px;
+          padding: 14px;
+          text-align: left;
+        }
+
+        // top: 50%;
+      }
+      // .zaznaczenie {
+      //   display: block;
+      //   position: absolute;
+      //   background: greenyellow;
+      //   width: 175px;
+      //   height: 180px;
+      //   z-index: 130;
+      //   top: 50%;
+      // }
+      // .turn-off {
+      //   display: none;
+      // }
       // .icon1{
       //     width: 139px;
       //     fill: red;
@@ -74,15 +157,31 @@
       //     text-align: center;
       //     transition: 0.2s linear;
       // }
-      // .icon1:hover{
-      //    position:absolute;
-      //    display: block;
-      // //    top: 0px;
-      // //    left: 0px;
-      //    width: 196px;
-      //    height: 390px;
-      //    background-color: #62c017;
-      //    background-image: url('../img/001-malware-white.png')
+
+      // .icon:hover {
+      //   position: absolute;
+      //   display: block;
+      //   top: 0px;
+      //   left: 0px;
+      //   width: 175px;
+      //   height: 390px;
+      //   background-color: #62c017;
+      //   text-align: center;
+
+      //   background-repeat: no-repeat;
+      //   background-image: url("../img/001-malware-white.png");
+      // }
+      // .icon2:hover {
+      //   position: absolute;
+      //   display: block;
+      //   top: 0px;
+      //   left: 25%;
+      //   width: 175px;
+      //   height: 390px;
+      //   background-color: #62c017;
+
+      //   background-repeat: no-repeat;
+      //   background-image: url("../img/001-malware-white.png");
       // }
     }
   }
