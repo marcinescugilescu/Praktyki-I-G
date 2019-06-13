@@ -409,7 +409,7 @@ body {
         display: block;
         position: absolute;
         background-color: #62c017;
-        margin-top: -40px;
+        margin-top: -5%;
         width: 190px;
         height: 380px;
         z-index: 130;
@@ -417,7 +417,7 @@ body {
         background-repeat: no-repeat;
         background-position: 50% 16.5%; }
         .products .wrapper .icons .icon-over p {
-          margin-top: 115%;
+          margin-top: 112%;
           color: white;
           font-family: "Mada";
           font-weight: 400;
@@ -466,29 +466,70 @@ body {
       font-size: 22px;
       line-height: 24px; }
 
+button {
+  position: absolute;
+  color: white;
+  background-color: #62c017;
+  z-index: 126;
+  border-radius: 3px;
+  border: none;
+  text-align: left;
+  text-decoration: none;
+  font-family: "Homenaje", sans-serif;
+  font-size: 22px;
+  letter-spacing: -0.25px; }
+
+input[type="checkbox"] {
+  clip: rect(1px, 1px, 1px, 1px);
+  opacity: 0;
+  width: 1px;
+  margin: 0;
+  position: absolute; }
+  input[type="checkbox"]:focus + label:before {
+    color: #62c017; }
+  input[type="checkbox"] + label {
+    position: absolute;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    padding-left: 2rem;
+    margin: 0; }
+    input[type="checkbox"] + label:before {
+      content: "☐";
+      position: absolute;
+      left: 0;
+      top: -0.25em;
+      font-size: 1.5em; }
+  input[type="checkbox"]:checked + label:before {
+    content: "🗹"; }
+  .is-submitted input[type="checkbox"]:invalid + label {
+    color: red; }
+
+input {
+  border: none;
+  font-family: "Mada light", sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  width: 225px;
+  top: 15px;
+  color: black;
+  border-bottom: 2px solid #989898; }
+  .is-submitted input:invalid {
+    border-color: red; }
+
 .contact {
   display: block;
   height: 650px;
-  width: 1366px;
+  max-width: 1366px;
   margin: 0 auto; }
   .contact .btn-contact {
-    position: absolute;
     line-height: 25px;
     width: 265px;
     height: 45px;
     right: 13%;
     top: 13%;
-    z-index: 126;
-    color: white;
-    background-color: #62c017;
-    border-radius: 3px;
-    border: none;
-    text-align: left;
-    padding-left: 1.5%;
-    text-decoration: none;
-    font-family: "Homenaje", sans-serif;
-    font-size: 22px;
-    letter-spacing: -25; }
+    padding-left: 1.5%; }
     .contact .btn-contact span {
       position: absolute;
       display: block;
@@ -509,31 +550,80 @@ body {
     display: block;
     width: 760px;
     height: 85px;
-    left: 21%;
+    left: 22%;
     top: 28%;
     font-family: "Mada light";
     letter-spacing: -0.25px;
     font-size: 22px;
     line-height: 30px; }
-  .contact .form-contact .form-block {
-    position: absolute;
+  .contact .form-contact {
     display: block;
+    position: absolute;
+    width: 850px;
+    height: 200px;
+    left: 22%;
+    top: 50%; }
+    .contact .form-contact .form-block {
+      position: absolute;
+      width: 850px;
+      height: 80px;
+      background-color: white; }
+      .contact .form-contact .form-block .form-name-label,
+      .contact .form-contact .form-block .form-company-label,
+      .contact .form-contact .form-block .form-phone-label,
+      .contact .form-contact .form-block .form-email-label {
+        width: 300px;
+        height: 40px;
+        font-family: "Mada light", sans-serif;
+        font-size: 30px;
+        line-height: 42px;
+        letter-spacing: -0.25px; }
+      .contact .form-contact .form-block #email {
+        width: 170px; }
+      .contact .form-contact .form-block #name:focus,
+      .contact .form-contact .form-block #company:focus,
+      .contact .form-contact .form-block #phone:focus,
+      .contact .form-contact .form-block #email:focus {
+        outline: none;
+        font-size: 18px;
+        color: black; }
+  .contact .cbox {
+    position: absolute;
     width: 850px;
     height: 80px;
-    background-color: white;
-    top: 48%;
-    left: 21%; }
-    .contact .form-contact .form-block .form-name-label,
-    .contact .form-contact .form-block .form-company-label,
-    .contact .form-contact .form-block .form-phone-label,
-    .contact .form-contact .form-block .form-email-label {
-      font-family: "Mada light", sans-serif;
-      font-size: 30px;
-      line-height: 42px;
-      letter-spacing: -0.25px; }
-    .contact .form-contact .form-block #name {
-      border: none;
-      border-bottom: 2px solid #989898; }
+    left: 0%;
+    top: 150%; }
+    .contact .cbox #cbox {
+      font-size: 28px;
+      background-color: #bbb;
+      font-family: "Mada light"; }
+    .contact .cbox .field-cbox-label {
+      margin-bottom: 16px;
+      font-size: 18px;
+      font-family: "Mada light"; }
+  .contact .btn-submit {
+    position: absolute;
+    margin: 0 auto;
+    width: 1366px;
+    height: 100px;
+    top: 210%;
+    left: -50%; }
+    .contact .btn-submit .btn-s {
+      left: 50%;
+      -webkit-transform: translateX(50%);
+              transform: translateX(50%);
+      line-height: 25px;
+      width: 160px;
+      height: 45px;
+      right: 13%;
+      padding-left: 1.5%; }
+      .contact .btn-submit .btn-s span {
+        position: absolute;
+        display: block;
+        right: 20px;
+        top: 8px;
+        width: 15px;
+        height: 22px; }
 
 .footer {
   display: block;

@@ -1,27 +1,115 @@
+button {
+  position: absolute;
+  color: $color-1;
+  background-color: #62c017;
+  z-index: 126;
+  border-radius: 3px;
+  border: none;
+  text-align: left;
+  text-decoration: none;
+  font-family: "Homenaje", sans-serif;
+  font-size: 22px;
+  letter-spacing: -0.25px;
+}
+
+input[type="checkbox"] {
+  clip: rect(1px, 1px, 1px, 1px);
+  opacity: 0;
+  // height: 0px;
+  width: 1px;
+  margin: 0;
+  position: absolute;
+
+  &:focus {
+    & + label:before {
+      color: $color-4;
+    }
+  }
+
+  & + label {
+    position: absolute;
+    user-select: none;
+    padding-left: $space;
+    margin: 0;
+    &:before {
+      content: "☐";
+      position: absolute;
+      left: 0;
+      top: -0.25em;
+      font-size: 1.5em;
+    }
+  }
+  &:checked + label {
+    &:before {
+      content: "🗹";
+    }
+  }
+
+  .is-submitted &:invalid + label {
+    color: $color-error;
+  }
+}
+
+input {
+  // display: block;
+  // position: absolute;
+  border: none;
+  font-family: "Mada light", sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  width: 225px;
+  top: 15px;
+  color: black;
+  border-bottom: 2px solid #989898;
+  // padding-top: 5px;
+  // margin-bottom: 25px;
+  .is-submitted &:invalid {
+    border-color: $color-error;
+  }
+}
+
+// input {
+//   // display: block;
+//   // position: absolute;
+//   border: none;
+//   font-family: "Mada light", sans-serif;
+//   font-size: 18px;
+//   line-height: 32px;
+//   width: 225px;
+//   top: 15px;
+//   color: black;
+//   border-bottom: 2px solid #989898;
+//   // padding-top: 5px;
+//   // margin-bottom: 25px;
+//   .is-submitted &:invalid {
+//     border-color: $color-error;
+//   }
+// }
+
 .contact {
   display: block;
   height: 650px;
-  width: 1366px;
+  max-width: 1366px;
   margin: 0 auto;
   .btn-contact {
-    position: absolute;
+    // position: absolute;
     // margin-top: 39px;
     line-height: 25px;
     width: 265px;
     height: 45px;
     right: 13%;
     top: 13%;
-    z-index: 126;
-    color: $color-1;
-    background-color: #62c017;
-    border-radius: 3px;
-    border: none;
-    text-align: left;
+    // z-index: 126;
+    // color: $color-1;
+    // background-color: #62c017;
+    // border-radius: 3px;
+    // border: none;
+    // text-align: left;
     padding-left: 1.5%;
-    text-decoration: none;
-    font-family: "Homenaje", sans-serif;
-    font-size: 22px;
-    letter-spacing: -25;
+    // text-decoration: none;
+    // font-family: "Homenaje", sans-serif;
+    // font-size: 22px;
+    // letter-spacing: -25;
     span {
       position: absolute;
       display: block;
@@ -45,7 +133,7 @@
     display: block;
     width: 760px;
     height: 85px;
-    left: 21%;
+    left: 22%;
     top: 28%;
     font-family: "Mada light";
     letter-spacing: -0.25px;
@@ -53,28 +141,180 @@
     line-height: 30px;
   }
   .form-contact {
+    display: block;
+    position: absolute;
+    width: 850px;
+    height: 200px;
+    left: 22%;
+    top: 50%;
     .form-block {
       position: absolute;
-      display: block;
+      // display: flex;
       width: 850px;
       height: 80px;
       background-color: $color-1;
-      top: 48%;
-      left: 21%;
+      // top: 48%;
+      // left: 21%;
       // transform: translateX(-50%);
       .form-name-label,
       .form-company-label,
       .form-phone-label,
       .form-email-label {
+        width: 300px;
+        height: 40px;
         font-family: "Mada light", sans-serif;
         font-size: 30px;
         line-height: 42px;
         letter-spacing: -0.25px;
       }
-      #name {
-        border: none;
-        border-bottom: 2px solid #989898;
+      // input#name,
+      // input#company,
+      // input#phone,
+      // input#email {
+      //   // display: block;
+      //   // position: absolute;
+      //   border: none;
+      //   font-family: "Mada light", sans-serif;
+      //   font-size: 18px;
+      //   line-height: 32px;
+      //   width: 225px;
+      //   top: 15px;
+      //   color: black;
+      //   border-bottom: 2px solid #989898;
+      //   // padding-top: 5px;
+      //   // margin-bottom: 25px;
+      //   // .is-submitted &:invalid {
+      //   //   border-color: $color-error;
+      //   // }
+      // }
+
+      #email {
+        width: 170px;
+      }
+      #name:focus,
+      #company:focus,
+      #phone:focus,
+      #email:focus {
+        outline: none;
+        // border-bottom: 2px solid $color-4;
+        font-size: 18px;
+        color: black;
+      }
+    }
+  }
+  .cbox {
+    position: absolute;
+    width: 850px;
+    height: 80px;
+    left: 0%;
+    top: 150%;
+
+    #cbox {
+      font-size: 28px;
+      background-color: #bbb;
+      font-family: "Mada light";
+    }
+    .field-cbox-label {
+      margin-bottom: 16px;
+      font-size: 18px;
+      font-family: "Mada light";
+    }
+  }
+  .btn-submit {
+    position: absolute;
+    margin: 0 auto;
+    width: 1366px;
+    height: 100px;
+    top: 210%;
+    // left: 0px;
+    left: -50%;
+
+    .btn-s {
+      // position: absolute;
+      // margin: 0 auto;
+      // display: block;
+      left: 50%;
+      transform: translateX(50%);
+      // margin-top: 39px;
+      line-height: 25px;
+      width: 160px;
+      height: 45px;
+      right: 13%;
+      // z-index: 126;
+      // color: $color-1;
+      // background-color: #62c017;
+      // border-radius: 3px;
+      // border: none;
+      // text-align: left;
+      padding-left: 1.5%;
+      // text-decoration: none;
+      // font-family: "Homenaje", sans-serif;
+      // font-size: 22px;
+      // letter-spacing: -0.25px;
+      span {
+        position: absolute;
+        display: block;
+        right: 20px;
+        top: 8px;
+        width: 15px;
+        height: 22px;
       }
     }
   }
 }
+
+// input[type="checkbox"] {
+//   clip: rect(1px, 1px, 1px, 1px);
+//   opacity: 0;
+//   height: 0px;
+//   width: 1px;
+//   margin: 0;
+//   position: absolute;
+
+//   &:focus {
+//     & + label:before {
+//       color: $color-4;
+//     }
+//   }
+
+//   & + label {
+//     position: absolute;
+//     user-select: none;
+//     padding-left: $space;
+//     margin: 0;
+//     &:before {
+//       content: "☐";
+//       position: absolute;
+//       left: 0;
+//       top: -0.25em;
+//       font-size: 1.5em;
+//     }
+//   }
+//   &:checked + label {
+//     &:before {
+//       content: "🗹";
+//     }
+//   }
+
+//   .is-submitted &:invalid + label {
+//     color: $color-error;
+//   }
+// }
+
+// input {
+//   // display: block;
+//   // position: absolute;
+//   border: none;
+//   font-family: "Mada light", sans-serif;
+//   font-size: 18px;
+//   line-height: 32px;
+//   width: 225px;
+//   top: 15px;
+//   color: black;
+//   border-bottom: 2px solid #989898;
+//   // padding-top: 5px;
+//   // margin-bottom: 25px;
+//   .is-submitted &:invalid {
+//     border-color: $color-error;
+//   }
+// }

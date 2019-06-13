@@ -1,11 +1,11 @@
-
 $color-1: white;
 
 // $color-1: #333;
 $color-2: #777;
 $color-3: #d1d0d1;
-$color-4: #4a90e2;
+$color-4: #62c017;
 
+$color-error: red;
 
 $color-1-light: #6f6f6f;
 $color-2-light: #9f9f9f;
@@ -13,8 +13,12 @@ $color-3-light: #dcdbdc;
 $color-4-light: #77abe9;
 
 $base-unit: 1rem;
-$font-1: 'Mada Light', sans-serif;
+
 $font-size-base: $base-unit;
+
+$font-size-body: $font-size-base;
+$font-size-body2: $font-size-base * 0.75;
+$font-1: "Mada Light", sans-serif;
 
 $space: $base-unit * 2;
 
@@ -25,9 +29,5 @@ $bpoint-desk-xl: 1600px;
 
 // $font-size-h1: $font-size-base * 2.27;
 // $font-size-h2: $font-size-base * 1.5;
-
-
-
-
 
 // $container-max-width: 74 * $base-unit;
