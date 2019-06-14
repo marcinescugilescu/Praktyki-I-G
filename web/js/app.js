@@ -77,12 +77,20 @@ window.addEventListener("scroll", function() {
       // return widthContent.style.width;
     }
   }
-  // header.classList.add("scroll-isMoving");
-});
+  // //swiper
+  // var Swiper = new Swiper(".swiper-container", {
+  //   // Optional parameters
+  //   direction: "horizonta",
+  //   loop: true,
+  //   autoplay: { delay: 3000 },
 
-// if(indow.outerWidth)
-// console.log(indow.outerWidth);
-// console.log(window.innerWidth);
+  //   // If we need pagination
+  //   pagination: {
+  //     el: ".swiper-pagination",
+  //     clickable: true
+  //   }
+  // });
+});
 
 //form submit
 form_el.onsubmit = function(event) {
@@ -112,4 +120,23 @@ form_el.onsubmit = function(event) {
   } else {
     console.log("there are some not property validated fields");
   }
+};
+
+window.onload = function() {
+  var mySwiper = new Swiper(".swiper-container", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+    autoplay: { delay: 3000 },
+
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    }
+  });
 };

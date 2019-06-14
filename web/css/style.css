@@ -290,8 +290,8 @@ body {
     width: 42%;
     left: 50%;
     top: 50%;
-    -webkit-transform: translate(-15%, -52%);
-            transform: translate(-15%, -52%); }
+    -webkit-transform: translate(-20%, -52%);
+            transform: translate(-20%, -52%); }
     .clients .clients-container .clients-text {
       font-size: 30px;
       line-height: 42px;
