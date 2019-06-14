@@ -18,6 +18,9 @@ let arrIcons = [
   "../img/011-hacker-white.png",
   "../img/012-firewall-white.png"
 ];
+form_mod = this.document.querySelector(".contact");
+form_el = form_mod.querySelector("form");
+form_req = form_mod.querySelectorAll("[required]");
 
 // console.log(btn_cookies);
 // btn_cookies.addEventListener("click", function() {
@@ -28,11 +31,6 @@ function iconChoice() {
   let divsRemove = document.querySelectorAll(".icon-over");
   divsRemove.forEach(div => div.remove());
 
-  // arrIcons.filter(function checkClass(cl) {
-  //   if (cl.classList.contains("icon-over")) {
-  //     cl.classList.remove("icon-over");
-  //   }
-  // });
   //tworzenie diva do wyświetlenia go po najechaniu w products
   const div = document.createElement("div");
   div.classList.add("icon-over");
@@ -56,18 +54,35 @@ function iconChoice() {
     let divRemove = document.querySelector(".icon-over");
     divIcons.removeChild(divRemove);
   });
-
-  // eraseDiv);divthis == !wybranyDiv) {
-  //   let divRemove = document.querySelector(".icon-over");
-  //   divIcons.removeChild(divRemove);
-  // }
 }
 icons.forEach(icon => icon.addEventListener("mouseover", iconChoice));
 
-form_mod = this.document.querySelector(".contact");
-form_el = form_mod.querySelector("form");
-form_req = form_mod.querySelectorAll("[required]");
-console.log(form_req);
+// let header = document.querySelector('[data-js="header"]');
+let header = document.querySelector(".header-content");
+// let headerTest = document.querySelector(".test");
+
+window.addEventListener("scroll", function() {
+  // console.log("dziala");
+  // console.log(window.scrollY);
+
+  if (window.scrollY == 0) {
+    header.classList.remove("scroll-isMoving");
+  } else if (window.scrollY > 0) {
+    header.classList.add("scroll-isMoving");
+
+    let widthContent = document.querySelector(".header-content");
+    if (window.outerWidth < window.innerWidth) {
+      widthContent.style.width = "960px";
+      // dla ekranu przeglądarki wiekszej od contentu - żeby width(position: fixed) nie odnosił się do okna przeglądarki a szerokości contentu.
+      // return widthContent.style.width;
+    }
+  }
+  // header.classList.add("scroll-isMoving");
+});
+
+// if(indow.outerWidth)
+// console.log(indow.outerWidth);
+// console.log(window.innerWidth);
 
 //form submit
 form_el.onsubmit = function(event) {

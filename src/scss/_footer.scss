@@ -1,10 +1,31 @@
-.footer{
-    display: block;
-    height: 85px;
-    width: 1366px;
-    margin: 0 auto;
-    background-color: #242424;
-    color: #848484;
-    font-family: 'Mada Light';
-    font-size: 12px;
+.footer {
+  display: block;
+  height: 85px;
+  max-width: 1366px;
+  margin: 0 auto;
+  background-color: #242424;
+  color: #848484;
+  font-family: "Mada Light";
+  font-size: 12px;
+  footer {
+    width: 100%;
+    color: #8a8a8a;
+    p {
+      padding-top: 28px;
+      margin-left: 14%;
+      left: 14%;
+      text-align: left;
+      font-family: "Mada light";
+      font-size: 12px;
+      line-height: 21px;
+      letter-spacing: 0.25px;
+    }
+    p + p {
+      padding-top: 0px;
+      font-family: "Mada light";
+      font-size: 12px;
+      line-height: 19px;
+      letter-spacing: 0.25px;
+    }
+  }
 }

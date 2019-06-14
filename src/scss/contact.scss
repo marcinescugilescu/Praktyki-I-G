@@ -131,7 +131,7 @@ input {
   .contact-text {
     position: absolute;
     display: block;
-    width: 760px;
+    width: 56%;
     height: 85px;
     left: 22%;
     top: 28%;
@@ -143,14 +143,14 @@ input {
   .form-contact {
     display: block;
     position: absolute;
-    width: 850px;
+    width: 62%;
     height: 200px;
     left: 22%;
     top: 50%;
     .form-block {
       position: absolute;
       // display: flex;
-      width: 850px;
+      width: 50%;
       height: 80px;
       background-color: $color-1;
       // top: 48%;
@@ -196,7 +196,7 @@ input {
       #phone:focus,
       #email:focus {
         outline: none;
-        // border-bottom: 2px solid $color-4;
+        border-bottom: 2px solid $color-4;
         font-size: 18px;
         color: black;
       }
@@ -204,7 +204,8 @@ input {
   }
   .cbox {
     position: absolute;
-    width: 850px;
+    // width: 850px;
+    width: 62%;
     height: 80px;
     left: 0%;
     top: 150%;
@@ -223,7 +224,7 @@ input {
   .btn-submit {
     position: absolute;
     margin: 0 auto;
-    width: 1366px;
+    width: 100%;
     height: 100px;
     top: 210%;
     // left: 0px;
