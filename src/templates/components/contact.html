@@ -13,33 +13,44 @@
                     <label for='name' class="form-name-label">Hello! I'm
                     </label>
                     <input required="required" name='name' type='text' pattern="[a-z]{1,15}" placeholder='Your Name' id="name"/>
-
-                    <label for='company' class="form-company-label">and I represent
+                </div>
+                <div class="form-el wide">
+                    <label for='company-name' class="form-company-label">and I represent
                     </label>
                     <input required="required" name='company-name' type='text' pattern="[a-z]{1,15}" placeholder='Company name' id="company"/>
-
                 </div>
-                <div class='form-el'>
+
+                <div class="form-el">
                     <label for='phone' class="form-phone-label">Call me at
                     </label>
                     <input required="required" name='phone' type='text' pattern='(\(?(\+|00)?48\)?)?[ -]?\d{3}[ -]?\d{3}[ -]?\d{3}' placeholder='You telephone number' id="phone"/>
                 </div>
-                <div class='form-el'>
+                <div class="form-el wide">
                     <label for='email' class="form-email-label">or send an email to
                     </label>
                     <input required="required" name='email' type='email' placeholder='Your email adress' id="email"/>
                 </div>
-                <div class='form-el cbox'>
-                    {# <label for='cbox'></label> #}
-                    <input required="required" name='cbox' id='cbox' type='checkbox'/>
-                    <label for='cbox' class="field-cbox-label">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</label>
-
-                </div>
-                <div class='btn-submit'>
-                    <button class='btn-s' type='submit'>send details
-                        <span>&#8594;</span></button>
-                </div>
+            </div>
+            <div class='form-el cbox'>
+                {# <label for='cbox'></label> #}
+                <input required="required" name='cbox' id='cbox' type='checkbox'/>
+                <label for='cbox' class="field-cbox-label">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</label>
+            </div>
+            <div class='btn-submit'>
+                <button class='btn-s' type='submit'>send details
+                    <span>&#8594;</span></button>
             </div>
         </form>
+
+        <div class="site-nr">5/5
+        </div>
+        <div class="page-prev-next">
+            <div class="line"></div>
+            <div class="up">
+                <img class="arrow_up" src="img/Arrow_up_dark.png" alt="">
+            </div>
+            <div class="down">
+                <img class="arrow_down" src="img/Arrow_down_dark.png" alt="">
+            </div>
+        </div>
     </div>
-</section>

@@ -1,3 +1,30 @@
+// .white {
+//   color: $color-1;
+// }
+
+html {
+  font-size: 10px;
+  
+  @include min-media($breakpoint-mob-Small) {
+    font-size: 12px;
+  }
+  @include min-media($breakpoint-mob) {
+    font-size: 14px;
+  }
+  @include min-media($breakpoint-tab) {
+    font-size: 18px;
+  }
+  @include min-media($breakpoint-desk-Small) {
+    font-size: 22px;
+  }
+  @include min-media($breakpoint-desk) {
+    font-size: 22px;
+  }
+  @include min-media($breakpoint-desk-xl) {
+    font-size: 24px;
+  }
+}
+
 body {
   font-family: "homenaje", sans-serif;
   width: 100%;
@@ -15,4 +42,63 @@ body {
   //   padding-left: 2 * $space;
   //   padding-right: 2 * $space;
   // }
+}
+
+.site-nr {
+  position: absolute;
+  width: 8%;
+  height: 6%;
+  top: 40%;
+  right: 0%;
+  transform: translateY(-60%);
+  text-align: center;
+
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: #000;
+    left: 0px;
+    top: 50px;
+    width: 100%;
+    height: 1px;
+  }
+}
+.page-prev-next {
+  position: absolute;
+  display: block;
+  right: 0%;
+  top: 75%;
+  width: 8%;
+  height: 100px;
+  z-index: 120;
+  // color: $color-1;
+
+  .line {
+    position: absolute;
+    display: block;
+    background-color: #000;
+    color: black;
+    left: 0%;
+    top: 20%;
+    width: 100%;
+    height: 1px;
+    z-index: 130;
+  }
+  .up {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    top: -25%;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  .down {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    top: 45%;
+    right: 50%;
+    transform: translateX(50%);
+  }
 }

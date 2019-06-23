@@ -202,8 +202,9 @@
 
     .praktyki-ig {
       font-family: "homenaje", sans-serif;
-      font-size: 58px;
-      letter-spacing: -25;
+      // font-size: 58px;
+      font-size: $font-size-h1;
+      letter-spacing: -0.25px;
       text-align: center;
       position: absolute;
       display: block;
@@ -253,6 +254,7 @@
         // margin-right: auto;
         height: 52px;
         font-family: "Mada Light";
+        font-size: $font-hero-cookie;
         letter-spacing: 0.25px;
         z-index: 121;
         a {

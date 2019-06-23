@@ -2,8 +2,20 @@
   // position: absolute;
   display: block;
   max-width: 1366px;
-  height: 1040px;
+  height: 1060px;
   margin: 0 auto;
+  @include max-media($breakpoint-desk-Small) {
+    height: 1250px;
+   }
+   @include max-media($breakpoint-tab) {
+    height: 1200px;
+   }
+   @include max-media($breakpoint-mob) {
+    height: 1100px;
+   }
+   @include max-media($breakpoint-mob-Small) {
+    height: 1050px;
+    }
 
   .wrapper {
     height: 100%;
@@ -12,26 +24,40 @@
     .products-tittle {
       position: absolute;
       display: block;
-      font-size: 50px;
+      font-size: $font-size-h2;
+      line-height: $font-size-body * 1.82;
       letter-spacing: -0.25px;
       left: 50%;
       top: 85px;
       transform: translateX(-50%);
+      
     }
     .products-text {
       position: absolute;
-      font-family: "Mada Light";
-      font-size: 22px;
-      width: 50%;
+      // font-family: "Mada Light";
+      font-family: $font-2;
+      font-size: $font-size-body;
+      line-height: $font-size-body*1.82;
+      width: 55%;
       text-align: center;
       // height: 290px;
-      line-height: 40px;
       // margin: 0 auto;
       // top: 50%;
       left: 50%;
       top: 15%;
       transform: translateX(-50%);
       // transform: translate(-50%, 50%);
+      @include max-media($breakpoint-desk-Small) {
+        top: 12%;
+       }
+      @include max-media($breakpoint-tab) {
+          top: 10%;
+        }
+      @include max-media($breakpoint-mob) {
+          top: 12%;
+        }
+
+
     }
     .icons {
       position: absolute;
@@ -45,7 +71,27 @@
       justify-content: space-around;
       align-content: space-around;
       flex-wrap: wrap;
-
+      @include max-media($breakpoint-desk-Small) {
+        width: 570px;
+        height: 900px;
+        top: 20%;
+        }
+      @include max-media($breakpoint-tab) {
+        width: 450px;
+        height: 900px;
+        top: 16%;
+       
+        }
+      @include max-media($breakpoint-mob) {
+        width: 280px;
+        height: 600px;
+        top: 26%;
+        }
+      @include max-media($breakpoint-mob-Small) {
+        min-width: 220px;
+        height: 800px;
+        top: 18%;
+        }
       .icon {
         // position: absolute;
         // width: 139px;
@@ -62,129 +108,121 @@
         // background-image: url('../img/001-malware.png');
         // background: greenyellow;
         // background-color: red;
+        @include max-media($breakpoint-desk-Small) {
+          flex-basis: 171px;
+          width: 171px;
+          height: 207px;
+         }
+         @include max-media($breakpoint-tab) {
+          flex-basis: 128px;
+          // width: 128px;
+          // height: 155px;
+          transform:scale(0.8);
+         }
+         @include max-media($breakpoint-mob) {
+          flex-basis: 115px;
+          // width: 115px;
+          height: 139px;
+          transform:scale(0.6);
+          }
+          @include max-media($breakpoint-mob-Small) {
+            flex-basis: 35%;
+            height: 120px;
+            // top: 25%;
+            transform:scale(0.5);
+            }
       }
 
-      // .icon1 {
-      //   top: 0%;
-      //   left: 0%;
-      // }
-      // .icon2 {
-      //   top: 0%;
-      //   left: 25%;
-      // }
-      // .icon3 {
-      //   top: 0%;
-      //   left: 50%;
-      // }
-      // .icon4 {
-      //   top: 0%;
-      //   left: 75%;
-      // }
-      // .icon5 {
-      //   top: 33%;
-      //   left: 0%;
-      // }
-      // .icon6 {
-      //   top: 33%;
-      //   left: 25%;
-      // }
-      // .icon7 {
-      //   top: 33%;
-      //   left: 50%;
-      // }
-      // .icon8 {
-      //   top: 33%;
-      //   left: 75%;
-      // }
-      // .icon:hover {
-      //   height: 250px;
-      //   background: greenyellow;
-      // }
-      // .icon:hover:before {
-      //   background: greenyellow;
-      //   width: 139px;
-      //   height: 180px;
-      // }
       .icon-over {
         display: block;
         position: absolute;
-        background-color: #62c017;
+        background-color: $color-2;
         // margin-top: -40px;
         margin-top: -5%;
         width: 190px;
-        height: 380px;
+        height: 360px;
         z-index: 130;
         cursor: pointer;
         background-repeat: no-repeat;
-
         background-position: 50% 16.5%;
         // text-align: center;
+        @include max-media($breakpoint-desk-Small) {
+          width: 171px;
+          height: 315px;
+        }
+        @include max-media($breakpoint-tab) {
+          // flex-basis: 128px;
+          // width: 145px;
+          height: 375px;
+          margin-top: -8%;
+          // background-position: 55% 16.5%;
+          transform:scale(0.8);
+          margin-left: -5%;
+        }
+        @include max-media($breakpoint-mob) {
+          flex-basis: 115px;
+          // width: 115px;
+          height: 350px;
+          margin-left: -8%;
+          margin-top: -22%;
+          transform:scale(0.6);
+        }
+        @include max-media($breakpoint-mob-Small) {
+          flex-basis: 40%;
+          margin-left: -8%;
+          margin-top: -25%;
+          // height: 900px;
+          // top: 25%;
+          transform:scale(0.5);
+        }
+
         p {
-          margin-top: 112%;
+          margin-top: 105%;
           color: $color-1;
           font-family: "Mada";
           font-weight: 400;
-          font-size: 14px;
-          line-height: 18px;
+          // font-size: 14px;
+          font-size: $font-size-body*0.63;
+          // line-height: 18px;
+          line-height: $font-size-body*0.81;
           letter-spacing: -0.25px;
           padding: 14px;
+          // padding: $font-size-body*0.63;
           text-align: left;
+
+          @include max-media($breakpoint-tab) {
+            font-size: 16px;
+            line-height: 18px;
+          }
+          @include max-media($breakpoint-mob) {
+            font-size: 15px;
+            line-height: 17px;
+          }
+          @include max-media($breakpoint-mob-Small) {
+            font-size: 14px;
+            line-height: 16px;
+          }
         }
-
-        // top: 50%;
       }
-      // .zaznaczenie {
-      //   display: block;
-      //   position: absolute;
-      //   background: greenyellow;
-      //   width: 175px;
-      //   height: 180px;
-      //   z-index: 130;
-      //   top: 50%;
-      // }
-      // .turn-off {
-      //   display: none;
-      // }
-      // .icon1{
-      //     width: 139px;
-      //     fill: red;
-      //     height: 139px;
-      //     flex-basis: 150px;
-
-      //     color: black;
-      //     background-repeat: no-repeat;
-      //     background-image: url('../img/001-malware.png');
-      //     // background: greenyellow;
-      //     // background-color: red;
-      //     text-align: center;
-      //     transition: 0.2s linear;
-      // }
-
-      // .icon:hover {
-      //   position: absolute;
-      //   display: block;
-      //   top: 0px;
-      //   left: 0px;
-      //   width: 175px;
-      //   height: 390px;
-      //   background-color: #62c017;
-      //   text-align: center;
-
-      //   background-repeat: no-repeat;
-      //   background-image: url("../img/001-malware-white.png");
-      // }
-      // .icon2:hover {
-      //   position: absolute;
-      //   display: block;
-      //   top: 0px;
-      //   left: 25%;
-      //   width: 175px;
-      //   height: 390px;
-      //   background-color: #62c017;
-
-      //   background-repeat: no-repeat;
-      //   background-image: url("../img/001-malware-white.png");
-      // }
+    }
+    .site-nr {
+      position: absolute;
+      width: 8%;
+      height: 6%;
+      top: 40%;
+      right: 0%;
+      transform: translateY(-60%);
+      text-align: center;
+      &:after {
+        content: "";
+        position: absolute;
+        display: block;
+        background-color: #000;
+        left: 0px;
+        top: 50px;
+        width: 100%;
+        height: 1px;
+      }
     }
   }
 }

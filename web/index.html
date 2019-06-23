@@ -15,25 +15,25 @@
 
     <body>
 
-        <section class='header' data-js="header">
+        <section class='header'>
     <div class='wrapper'>
         <div class="header-content">
             <a href='#' class='header-logo'>
-                <img src="..\img\logo_white.png" alt='logo'>
+                <img src="img\logo_white.png" alt='logo'>
             </a>
             <ul class='header-nav'>
                 <li>
                     <a href="#mission">MISSION</a>
                 </li>
-                <li class="line"></li>
+                <li class="line_btw_menu"></li>
                 <li>
                     <a href="#clients">CLIENTS</a>
                 </li>
-                <li class="line"></li>
+                <li class="line_btw_menu"></li>
                 <li>
                     <a href="#products">PRODUCTS</a>
                 </li>
-                <li class="line"></li>
+                <li class="line_btw_menu"></li>
                 <li>
                     <a href="#contact">CONTACT</a>
                 </li>
@@ -42,18 +42,16 @@
     </div>
 </section>
 
-        <section class='hero' data-js="hero">
+        <section class='hero' id="hero">
     <div class='wrapper'>
         <div class="hero-content">
-            
-
             <div class="praktyki-ig">
-                PRAKTYKI
-                <br>
-                <span>INFINITY-GROUP</span>
+                <h1>PRAKTYKI
+                    <br>
+                    <span>INFINITY-GROUP</span></h1>
             </div>
             <div class="cookies" data-js="cookies">
-                <div class="cookies-doll"><img src="../img/cookies-doll.png" alt="cookies doll"></div>
+                <div class="cookies-doll"><img src="img/cookies-doll.png" alt="cookies doll"></div>
                 <p class="text">
                     We use own and third party cookies to improve our services and show ads related to your preferences by analyzing your browser habits . If you continue browsing , we consider you accept its use. You can switch the configuration or learn more
                     <a href="#">here</a>
@@ -72,28 +70,83 @@
             Mission</div>
         <p class="mission-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum...</p>
+
+        <div class="site-nr">1/5
+        </div>
+        <div class="page-prev-next">
+            <div class="line"></div>
+            <div class="up">
+                <img class="arrow_up" src="img/Arrow_up_dark.png" alt="">
+            </div>
+            <div class="down">
+                <img class="arrow_down" src="img/Arrow_down_dark.png" alt="">
+            </div>
+        </div>
     </div>
+
 </section>
 
-        <section class='clients' id="clients" data-js="clients">
+        <section class='clients' id="clients">
     <div class='wrapper'>
-        <div class="tab-img"><img src="../img/iPod2.png" alt="tab image"></div>
-        <div class="clients-tittle">Clients</div>
-        <div class="clients-container">
-            
-            <p class="clients-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <div class="clients-subscription">Project Manager/<a href="Infinity-group.pl">Infinity-group.pl</a>
+        <div class='swiper-container'>
+            <div class="swiper-wrapper">
+
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="tab-img"></div>
+                    <div class="clients-tittle">Clients</div>
+                    <div class="clients-container">
+                        <p class="clients-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="clients-subscription">Project Manager/<a href="Infinity-group.pl">Infinity-group.pl</a>
+                        </div>
+                        <div class="frame">web design</div>
+                        
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="tab-img"></div>
+                    <div class="clients-tittle">Clients</div>
+                    <div class="clients-container">
+                        <p class="clients-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="clients-subscription">Project Manager/<a href="Infinity-group.pl">Infinity-group.pl</a>
+                        </div>
+                        
+                        <div class="frame">usability</div>
+                        
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="tab-img"></div>
+                    <div class="clients-tittle">Clients</div>
+                    <div class="clients-container">
+                        <p class="clients-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="clients-subscription">Project Manager/<a href="Infinity-group.pl">Infinity-group.pl</a>
+                        </div>
+                        
+                        <div class="frame">e-commerce</div>
+                    </div>
+                </div>
             </div>
-            <div class="frame">web design</div>
-            <div class="frame">usability</div>
-            <div class="frame">e-commerce</div>
+            <div class="swiper-pagination"></div>
+
         </div>
 
-        
+        <div class="swiper-pagination"></div>
 
-        
-
+        <div class="site-nr ">2/5
+        </div>
+        <div class="page-prev-next white">
+            <div class="line"></div>
+            <div class="up">
+                <img class="arrow_up " src="img/Arrow_up_dark.png" alt="">
+            </div>
+            <div class="down">
+                <img class="arrow_down" src="img/Arrow_down_dark.png" alt="">
+            </div>
+        </div>
     </div>
 </div>
 </section>
@@ -107,38 +160,60 @@
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
 
         <div class="icons">
-            <div class="icon" id="0"><img src="../img/001-malware.png" alt=""></div>
-            <div class="icon" id="1"><img src="../img/002-smartphone-1.png" alt=""></div>
-            <div class="icon" id="2"><img src="../img/003-folder.png" alt=""></div>
-            <div class="icon" id="3"><img src="../img/004-malware.png" alt=""></div>
+            <div class="icon" id="0"><img src="img/001-malware.png" alt=""></div>
+            <div class="icon" id="1"><img src="img/002-smartphone-1.png" alt=""></div>
+            <div class="icon" id="2"><img src="img/003-folder.png" alt=""></div>
+            <div class="icon" id="3"><img src="img/004-malware.png" alt=""></div>
 
-            <div class="icon" id="4"><img src="../img/005-pendrive.png" alt=""></div>
-            <div class="icon" id="5"><img src="../img/006-network.png" alt=""></div>
-            <div class="icon" id="6"><img src="../img/007-smartphone-2.png" alt=""></div>
-            <div class="icon" id="7"><img src="../img/008-fishing.png" alt=""></div>
+            <div class="icon" id="4"><img src="img/005-pendrive.png" alt=""></div>
+            <div class="icon" id="5"><img src="img/006-network.png" alt=""></div>
+            <div class="icon" id="6"><img src="img/007-smartphone-2.png" alt=""></div>
+            <div class="icon" id="7"><img src="img/008-fishing.png" alt=""></div>
 
-            <div class="icon" id="8"><img src="../img/009-data-protection.png" alt=""></div>
-            <div class="icon" id="9"><img src="../img/010-credit-card.png" alt=""></div>
-            <div class="icon" id="10"><img src="../img/011-hacker.png" alt=""></div>
-            <div class="icon" id="11"><img src="../img/012-firewall.png" alt=""></div>
+            <div class="icon" id="8"><img src="img/009-data-protection.png" alt=""></div>
+            <div class="icon" id="9"><img src="img/010-credit-card.png" alt=""></div>
+            <div class="icon" id="10"><img src="img/011-hacker.png" alt=""></div>
+            <div class="icon" id="11"><img src="img/012-firewall.png" alt=""></div>
 
+        </div>
+        <div class="site-nr">3/5
+        </div>
+        <div class="page-prev-next">
+            <div class="line"></div>
+            <div class="up">
+                <img class="arrow_up" src="img/Arrow_up_dark.png" alt="">
+            </div>
+            <div class="down">
+                <img class="arrow_down" src="img/Arrow_down_dark.png" alt="">
+            </div>
         </div>
     </div>
 </section>
 
-        <section class='map' data-js="map">
+        <section class='map' id="map" data-js="map">
     <div class='wrapper'>
-        <div class="map-sign"><img src="../img/sign.png" alt=""></div>
+        <div class="map-sign"><img src="img/sign.png" alt=""></div>
         <div class="map-text">
             <div class="company-name">Infinity Group Sp. z o.o</div>
             <div class="company-adress">ul. Skladowa 12,<br>
                 15-399 Bialystok,<br>
                 Polska.</div>
 
-            <div class="map-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+            <div class="map-description">Lorem ipsum dolor sit amet,<br>
+                consectetur adipiscing elit</div>
 
         </div>
-
+        <div class="site-nr">4/5
+        </div>
+        <div class="page-prev-next">
+            <div class="line"></div>
+            <div class="up">
+                <img class="arrow_up" src="img/Arrow_up_dark.png" alt="">
+            </div>
+            <div class="down">
+                <img class="arrow_down" src="img/Arrow_down_dark.png" alt="">
+            </div>
+        </div>
     </div>
 </section>
 
@@ -157,38 +232,49 @@
                     <label for='name' class="form-name-label">Hello! I'm
                     </label>
                     <input required="required" name='name' type='text' pattern="[a-z]{1,15}" placeholder='Your Name' id="name"/>
-
-                    <label for='company' class="form-company-label">and I represent
+                </div>
+                <div class="form-el wide">
+                    <label for='company-name' class="form-company-label">and I represent
                     </label>
                     <input required="required" name='company-name' type='text' pattern="[a-z]{1,15}" placeholder='Company name' id="company"/>
-
                 </div>
-                <div class='form-el'>
+
+                <div class="form-el">
                     <label for='phone' class="form-phone-label">Call me at
                     </label>
                     <input required="required" name='phone' type='text' pattern='(\(?(\+|00)?48\)?)?[ -]?\d{3}[ -]?\d{3}[ -]?\d{3}' placeholder='You telephone number' id="phone"/>
                 </div>
-                <div class='form-el'>
+                <div class="form-el wide">
                     <label for='email' class="form-email-label">or send an email to
                     </label>
                     <input required="required" name='email' type='email' placeholder='Your email adress' id="email"/>
                 </div>
-                <div class='form-el cbox'>
-                    
-                    <input required="required" name='cbox' id='cbox' type='checkbox'/>
-                    <label for='cbox' class="field-cbox-label">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</label>
-
-                </div>
-                <div class='btn-submit'>
-                    <button class='btn-s' type='submit'>send details
-                        <span>&#8594;</span></button>
-                </div>
+            </div>
+            <div class='form-el cbox'>
+                
+                <input required="required" name='cbox' id='cbox' type='checkbox'/>
+                <label for='cbox' class="field-cbox-label">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</label>
+            </div>
+            <div class='btn-submit'>
+                <button class='btn-s' type='submit'>send details
+                    <span>&#8594;</span></button>
             </div>
         </form>
-    </div>
-</section>
 
-        <section class='footer' data-js="footer">
+        <div class="site-nr">5/5
+        </div>
+        <div class="page-prev-next">
+            <div class="line"></div>
+            <div class="up">
+                <img class="arrow_up" src="img/Arrow_up_dark.png" alt="">
+            </div>
+            <div class="down">
+                <img class="arrow_down" src="img/Arrow_down_dark.png" alt="">
+            </div>
+        </div>
+    </div>
+
+        <section class='footer' id="footer">
     <div class='wrapper'>
         <footer>
             <p>&copy;Copyrights 2018 IG</p>

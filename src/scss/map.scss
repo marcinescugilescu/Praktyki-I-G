@@ -1,46 +1,174 @@
 .map {
   display: block;
+  position: relative;
   height: 490px;
   max-width: 1366px;
   margin: 0 auto;
   background-image: url("../img/map.png");
   background-repeat: no-repeat;
-  background-position-x: 80%;
+  // background-size: 100% auto;
+  background-position-x: 75%;
+  opacity: 0.6;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 11;
+    opacity: 0.9;
+    background-image: linear-gradient(to right, rgba(225,225,225,0.7), rgba(255,0,0,0));
+  }
+
+  opacity: 0.9;
   .map-sign {
     position: absolute;
     display: block;
     top: 33%;
-    left: 17%;
+    left: 16%;
+    z-index: 30;
+    @include max-media($breakpoint-desk-Small) {
+      top: 35%;
+      left: 9%;
+      transform: scale(0.8);
+     }
+     @include max-media($breakpoint-tab) {
+      top: 35%;
+      left: 7%;
+      transform: scale(0.6);
+      }
+     @include max-media($breakpoint-mob) {
+      top: 35%;
+      left: 4%;
+      transform: scale(0.5);
+      }
+      @include max-media($breakpoint-mob-Small) {
+      top: 35%;
+      left: 2%;
+      transform: scale(0.4);
+        }
   }
   .map-text {
     position: absolute;
     display: block;
-    // width: 270px;
-    // height: 230px;
-    width: 20%;
+    width: 32%;
     height: 45%;
     top: 33%;
     left: 20%;
+    z-index: 30;
+    @include max-media($breakpoint-desk-Small) {
+      top: 36%;
+      left: 14%;
+      }
+    @include max-media($breakpoint-tab) {
+      top: 36%;
+      left: 13%;
+      width: 34%;
+      }
+     @include max-media($breakpoint-mob) {
+      top: 36%;
+      left: 12%;
+      width: 55%;
+      }
     .company-name {
-      font-family: "Mada", sans-serif;
+      font-family: $font-2;
       font-weight: 400;
-      font-size: 22px;
-      line-height: 29px;
+      font-size: $font-size-body;
+      line-height: $font-size-body*1.32;
       letter-spacing: -25;
       margin: 1% 0;
+      z-index: 30;
+      @include max-media($breakpoint-desk-Small) {
+        font-size: 20px;
+        line-height: 26px;
+        }
+      @include max-media($breakpoint-tab) {
+        font-size: 20px;
+        line-height: 26px;
+        }
+      @include max-media($breakpoint-mob) {
+        font-size: 17px;
+        line-height: 22px;
+        }
+      @include max-media($breakpoint-mob-Small) {
+        font-size: 15px;
+        line-height: 19px;
+        }
+
     }
     .company-adress {
-      font-family: "Mada", sans-serif;
+      font-family: $font-2;
       font-weight: 300;
-      font-size: 22px;
-      line-height: 24px;
+      font-size: $font-size-body;
+      line-height: $font-size-body*1.09;
       margin: 8% 0%;
+      z-index: 30;
+      @include max-media($breakpoint-desk-Small) {
+        font-size: 20px;
+        line-height: 26px;
+        }
+      @include max-media($breakpoint-tab) {
+        font-size: 17px;
+        line-height: 22px;
+        font-weight: 400;
+        }
+      @include max-media($breakpoint-mob) {
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 400;
+        }
+      @include max-media($breakpoint-mob-Small) {
+        font-size: 12px;
+        line-height: 17px;
+        font-weight: 400;
+        }
     }
     .map-description {
-      font-family: "Mada", sans-serif;
+      font-family: $font-2;
       font-weight: 300;
-      font-size: 22px;
-      line-height: 24px;
+      font-size: $font-size-body;
+      line-height: $font-size-body*1.09;
+      z-index: 30;
+      @include max-media($breakpoint-desk-Small) {
+        font-size: 20px;
+        line-height: 26px;
+        }
+      @include max-media($breakpoint-tab) {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400;
+        }
+      @include max-media($breakpoint-mob) {
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 400;
+        }
+      @include max-media($breakpoint-mob-Small) {
+        font-size: 12px;
+        line-height: 17px;
+        font-weight: 400;
+        }
     }
   }
+  // .site-nr {
+  //   position: absolute;
+  //   width: 8%;
+  //   height: 6%;
+  //   top: 40%;
+  //   right: 0%;
+  //   transform: translateY(-60%);
+  //   text-align: center;
+  //   &:after {
+  //     content: "";
+  //     position: absolute;
+  //     display: block;
+  //     background-color: #000;
+  //     left: 0px;
+  //     top: 50px;
+  //     width: 100%;
+  //     height: 1px;
+  //   }
+  // }
 }
