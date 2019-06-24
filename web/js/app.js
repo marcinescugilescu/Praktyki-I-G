@@ -72,17 +72,13 @@ icons.forEach(icon => icon.addEventListener("mouseover", iconChoice));
 
 
 
-
 let header = document.querySelector(".header-content");
 
-//zmiana rodzaju menu w zależności od rozdzielczości
-if (window.innerWidth > 767) {
+//uruchomiemie/zamknięcie menu desktopowego
+if (window.innerWidth > 768) {
   header.classList.add("scroll-isMoving");
-  btns_header.forEach(btn => btn.classList.remove("show-btn-header"));
 } else if (window.innerWidth < 768) {
   header.classList.remove("scroll-isMoving");
-
-  btns_header.forEach(btn => btn.classList.add("show-btn-header"));
 }
 
 btns_header.forEach(function (btn, index) {
@@ -96,11 +92,16 @@ window.addEventListener("scroll", function () {
 
   if (window.scrollY == 0) {
     header.classList.remove("scroll-isMoving");
+    if (window.innerWidth < 768) {
+      btns_header.forEach(btn => btn.classList.add("show-btn-header"));
+    }
   } else if (window.scrollY > 0) {
     if (window.innerWidth < 768) {
+      btns_header.forEach(btn => btn.classList.add("show-btn-header"));
       header.classList.remove("scroll-isMoving");
     } else if (window.innerWidth > 767) {
       header.classList.add("scroll-isMoving");
+      btns_header.forEach(btn => btn.classList.remove("show-btn-header"));
     }
   }
 
@@ -139,7 +140,6 @@ form_el.onsubmit = function (event) {
     }
   }
   if (!isError) {
-    // base js send post
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
       if (this.readyState == 4 && this.status == 200) {

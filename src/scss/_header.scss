@@ -10,7 +10,7 @@
     height: 50px;
     border-radius: 0px;
     top: -70px;
-    z-index: 125;
+    z-index: -1;
     outline: none;
     opacity: 0.85;
     &:hover{
@@ -52,6 +52,7 @@
 
     &.show-btn-header{
       position: fixed;
+      z-index: 130;
       top: 0px;
     }
 
@@ -82,6 +83,7 @@
       @include max-media($breakpoint-tab){
         display: none;
       }
+
 
       &.scroll-isMoving {
         position: fixed;

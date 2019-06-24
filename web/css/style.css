@@ -139,7 +139,7 @@ body {
     height: 50px;
     border-radius: 0px;
     top: -70px;
-    z-index: 125;
+    z-index: -1;
     outline: none;
     opacity: 0.85; }
     .header .header-menu-btn:hover {
@@ -172,6 +172,7 @@ body {
         display: none; } }
     .header .header-menu-btn.show-btn-header {
       position: fixed;
+      z-index: 130;
       top: 0px; }
     .header .header-menu-btn .span {
       width: 20px;
