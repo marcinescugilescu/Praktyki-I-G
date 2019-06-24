@@ -47,7 +47,6 @@ input[type="checkbox"] {
     }
   }
   
-
   .is-submitted &:invalid + label {
     color: $color-error;
   }
