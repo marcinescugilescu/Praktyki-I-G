@@ -3,7 +3,6 @@
 
 .hero {
   position: relative;
-  // top: 0; left: 0;
   height: 650px;
   max-width: 1366px;
   margin: 0 auto;
@@ -35,11 +34,6 @@
     background-repeat: no-repeat;
     background-position: center center;
     opacity: 0.9;
-    // position: absolute;
-    // left: 0px;
-    // top: 0px;
-    // width: 1366px;
-    // height: 650px;
     z-index: 11;
     position: absolute;
     top: 0;
@@ -50,159 +44,9 @@
 
   .hero-content {
     width: 100%;
-    // .wrapper-header {
-    //   position: absolute;
-    //   width: 70%;
-    //   left: 15%;
-    //   height: 95px;
-    //   // text-align: center;
-    //   margin: 0 auto;
-    //   // overflow: hidden;
-    //   // left: 50%;
-    //   // transform: translateX(-50);
-
-    //   .header {
-    //     // position: absolute;
-    //     position: fixed;
-    //     display: block;
-
-    //     margin: 0 auto;
-
-    //     height: 95px;
-    //     // left: 15%;
-    //     right: 15%;
-    //     // top: 0px;
-    //     width: inherit;
-    //     z-index: 100;
-    //     // background-color: rgb(34, 34, 34);
-    //     color: $color-1;
-    //     opacity: 0.831;
-    //     // &.scroll-isMoving {
-    //     //   position: fixed;
-    //     //   left: 50%;
-    //     //   transform: translateX(-50%);
-    //     //   // left: 15%;
-    //     //   width: 60em;
-    //     //   opacity: 0.9;
-    //     //   z-index: 130;
-    //     //   background-color: rgb(34, 34, 34);
-    //     //   height: 80px;
-    //     //   // width: 70%;
-    //     // }
-
-    //     .green-box {
-    //       position: absolute;
-    //       width: 95px;
-    //       left: 15%;
-    //       height: 10px;
-    //       background-color: #62c017;
-    //       // &:before(2) {
-    //       //   content: "";
-    //       //   color: greenyellow;
-    //       // }
-    //     }
-    //     a.header-logo {
-    //       position: absolute;
-    //       // display: block;
-    //       // margin-left: 12%;
-    //       // margin-top: 9px;
-    //       top: 25px;
-    //       left: 15px;
-    //       // width: 95px;
-    //       height: 95px;
-    //     }
-
-    //     ul.header-nav {
-    //       position: absolute;
-    //       display: flex;
-    //       justify-content: center;
-    //       width: 90%;
-    //       height: 95px;
-    //       // margin: 0 auto;
-    //       // margin-left: 22%;
-    //       left: 5%;
-    //       z-index: 10;
-    //       // a {
-    //       //   text-decoration-line: none;
-    //       //   z-index: 126;
-    //       //   cursor: pointer;
-
-    //       li {
-    //         // position: absolute;
-    //         display: block;
-    //         width: 145px;
-    //         height: 95px;
-    //         margin-top: 45px;
-    //         color: $color-1;
-    //         // color: greenyellow;
-    //         font-family: "Mada Light";
-    //         letter-spacing: 0.25px;
-    //         text-align: center;
-
-    //         a {
-    //           text-decoration-line: none;
-    //           z-index: 126;
-    //           color: $color-1;
-
-    //           cursor: pointer;
-    //         }
-    //         a:hover {
-    //           color: #62c017;
-    //           z-index: 126;
-    //         }
-    //         // a:visited {
-    //         //   color: $color-1;
-    //         // }
-
-    //         // &:after:nth-of-type(2) {
-    //         //   content: "";
-    //         //   display: block;
-    //         //   width: 2px;
-    //         //   height: 110px;
-    //         //   background-color: #93a693;
-    //         //   z-index: 120;
-    //         // }
-
-    //         // :nth-chlid(2) {
-    //         //   color: greenyellow;
-    //         // }
-    //       }
-    //       li.line {
-    //         display: block;
-    //         margin-top: 25px;
-    //         top: 25px;
-    //         // left: 240px;
-    //         width: 1px;
-    //         height: 55px;
-    //         background-color: #93a693;
-    //         z-index: 15;
-    //       }
-
-    //       // li:nth-of-type(1):after {
-    //       //   content: "";
-    //       //   display: block;
-    //       //   position: absolute;
-    //       //   top: 25px;
-    //       //   left: 240px;
-    //       //   width: thin;
-    //       //   height: 55px;
-    //       //   background-color: #93a693;
-    //       //   z-index: 120;
-    //     } // }
-    //   }
-    // }
-    // &.scroll-isMoving {
-    //   position: fixed;
-    //   opacity: 0.9;
-    //   z-index: 130;
-    //   background-color: rgb(34, 34, 34);
-    //   height: 80px;
-    //   width: 70%;
-    // }
-
+  
     .praktyki-ig {
       font-family: "homenaje", sans-serif;
-      // font-size: 58px;
       font-size: $font-size-h1;
       letter-spacing: -0.25px;
       text-align: center;
@@ -213,9 +57,6 @@
       top: 235px;
       left: 50%;
       transform: translateX(-50%);
-      // left: 532px;
-      // width: 100%;
-      // height: 122px;
       span {
         color: #2d2d2d;
       }
@@ -224,13 +65,12 @@
     .cookies {
       position: absolute;
       display: block;
-      background-color: rgb(34, 34, 34);
+      background-color: #222222;
       color: $color-1;
       opacity: 0.831;
       top: 548px;
       bottom: 0px;
       left: 0px;
-      // width: 1366px;
       width: 100%;
       height: 103px;
       font-size: 14px;
@@ -243,77 +83,79 @@
 
       p.text {
         position: absolute;
-        // display: block;
         color: $color-1;
-        // width: 683px;
         width: 50%;
         margin-top: 28px;
         margin-left: 22.5%;
-        // margin-left: 200px;
-        // margin-left: auto;
-        // margin-right: auto;
         height: 52px;
-        font-family: "Mada Light";
+        font-family: $font-2;
+        font-weight: 300;
         font-size: $font-hero-cookie;
+        line-height: $font-size-body*0.86;
         letter-spacing: 0.25px;
         z-index: 121;
         a {
-          color: #62c017;
+          color: $color-2;
         }
       }
 
       button {
         position: absolute;
         margin-top: 39px;
-        // margin-right: 15%;
-        // margin-right: 300px;
         line-height: 25px;
         width: 80px;
         height: 25px;
         right: 15%;
         z-index: 126;
         cursor: pointer;
-
-        // color: $color-1;
+        text-align: center;
         color: $color-1;
-        background-color: #62c017;
+        background-color: $color-2;
         border-radius: 3px;
         border: none;
-
         text-decoration: none;
-        font-family: "Mada Light";
-        font-size: 14px;
+        font-size: $font-hero-cookie;
+        line-height: $font-size-body*0.86;
+        font-family: $font-2;
+        font-weight: 300;
         letter-spacing: 0.25px;
+        @include max-media($breakpoint-tab) {
+          width: 70px;
+          right: 14%;
+        }
+        @include max-media($breakpoint-mob) {
+          width: 55px;
+          right: 12%;
+        }
       }
 
       .cookies-doll {
         position: absolute;
         margin-left: 16%;
         margin-top: 29px;
-        // left: 222px;
-        // top: 577px;
         width: 39px;
         height: 47px;
         z-index: 125;
+        @include max-media($breakpoint-desk) {
+          transform: scale(0.9);
+        }
+        @include max-media($breakpoint-desk-Small) {
+          transform: scale(0.8);
+          margin-left: 15%;
+        }
+        @include max-media($breakpoint-tab) {
+          transform: scale(0.7);
+          margin-left: 14%;
+        }
+        @include max-media($breakpoint-mob) {
+          transform: scale(0.55);
+          margin-left: 12%;
+        }
+        @include max-media($breakpoint-mob-Small) {
+          transform: scale(0.40);
+          margin-left: 10;
+        }
       }
-      // p{
-      //     position: absolute;
-      //     display: block;
-      //     color: $color-1;
-      //     // width: 683px;
-      //     width: 50%;
-      //     margin: 28px auto;
-      //     // margin-left: auto;
-      //     // margin-right: auto;
-      //     height: 52px;
-      //     font-family: "Mada Light";
-      //     letter-spacing: 0.25px;
-      //     z-index: 121;
-      //     a{
-
-      //         color: #62c017;
-      //     }
-      // }
     }
   }
 }

@@ -2,30 +2,18 @@ $color-1: white;
 $color-2: #62c017;
 $color-3: #777;
 $color-4: #d1d0d1;
-
+$color-5: #daffdf;
 
 $color-error: red;
 
-$color-1-light: #6f6f6f;
-$color-2-light: #9f9f9f;
-$color-3-light: #dcdbdc;
-$color-4-light: #77abe9;
-
 $base-unit: 1rem;
 
-// $font-1: "Poppins", sans-serif;
-// $font-2: 
-// $font-size-base: $base-unit;
-
-
-//  for 22px
 $font-size-base: $base-unit;
 $font-size-body: $font-size-base;                   //22px
 
-// $font-size-body2: $font-size-base * 0.75;
 $font-header-menu: $font-size-base * 0.73;          //16px
 $font-hero-cookie: $font-size-base * 0.62;          //14px
-$font-footer: $font-size-base * 1.54;               //12px
+$font-footer: $font-size-base * 0.54;               //12px
 
 $font-size-h1: $font-size-base * 2.64;              //58px
 $font-size-h2: $font-size-base * 2.27;              //50px
@@ -33,18 +21,12 @@ $font-size-swipper: $font-size-base * 1.36;         //30px
 
 $font-1: "Homenaje", sans-serif;
 $font-2: "Mada", sans-serif;
-// $font-3: "Mada Light", sans-serif;
 
-// $space: $base-unit * 2;
 
 $breakpoint-mob-Small: 360px;
 $breakpoint-mob: 480px;
 $breakpoint-tab: 768px;
 $breakpoint-desk-Small: 1024px;
 $breakpoint-desk: 1366px;
-$breakpoint-desk-xl: 1600px;
+// $breakpoint-desk-xl: 1600px;
 
-// $font-size-h1: $font-size-base * 2.27;
-// $font-size-h2: $font-size-base * 1.5;
-
-// $container-max-width: 74 * $base-unit;

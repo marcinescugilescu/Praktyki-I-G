@@ -1,9 +1,8 @@
-// import { lchmod } from "fs";
 
+const btns_header = document.querySelectorAll('.header-menu-btn');
 const btn_cookies = document.querySelector(".btn-cookies");
 const cookies = document.querySelector(".cookies");
 const icons = document.querySelectorAll("div.icon");
-// arrIcons = [...icons];
 const divIcons = document.querySelector("div.icons");
 let divRemove = document.querySelector(".icon-over");
 let arrIcons = [
@@ -27,14 +26,19 @@ let arrAnchors = [
   "#products",
   "#map",
   "#contact",
-  "#footer"
+  "#footer",
+];
+let arrAnchorsNav = [
+  "#mission",
+  "#clients",
+  "#products",
+  "#contact",
 ];
 
 form_mod = this.document.querySelector(".contact");
 form_el = form_mod.querySelector("form");
 form_req = form_mod.querySelectorAll("[required]");
 
-// console.log(btn_cookies);
 btn_cookies.addEventListener("click", function () {
   cookies.classList.add("turn-off");
 });
@@ -56,9 +60,6 @@ function iconChoice() {
 
   divIcons.insertBefore(div, divIcons.firstChild);
 
-  // this.style.offsetTop = Y + "px";
-  // this.style.offsetLeft = X + "px";
-
   div.style.top = Y + "px";
   div.style.left = X + "px";
 
@@ -69,91 +70,45 @@ function iconChoice() {
 }
 icons.forEach(icon => icon.addEventListener("mouseover", iconChoice));
 
-// let header = document.querySelector('[data-js="header"]');
-let header = document.querySelector(".header-content");
-// let secHeader = document.querySelector("section.header");
 
-// let ArrowsRight = document.querySelector(".page-prev-next");
+
+
+let header = document.querySelector(".header-content");
+
+//zmiana rodzaju menu w zależności od rozdzielczości
+if (window.innerWidth > 767) {
+  header.classList.add("scroll-isMoving");
+  btns_header.forEach(btn => btn.classList.remove("show-btn-header"));
+} else if (window.innerWidth < 768) {
+  header.classList.remove("scroll-isMoving");
+
+  btns_header.forEach(btn => btn.classList.add("show-btn-header"));
+}
+
+btns_header.forEach(function (btn, index) {
+  btn.addEventListener("click", function () {
+    location.href = `${arrAnchorsNav[index]}`;
+  });
+});
+
 
 window.addEventListener("scroll", function () {
-  // console.log("dziala");
-  // console.log(window.scrollY);
 
   if (window.scrollY == 0) {
-    console.log(window.outerWidth);
-    console.log(window.innerWidth);
     header.classList.remove("scroll-isMoving");
-    header.classList.remove("scroll-isMoving-Narrow");
   } else if (window.scrollY > 0) {
     if (window.innerWidth < 768) {
       header.classList.remove("scroll-isMoving");
-      header.classList.add("scroll-isMoving-Narrow");
-    } else if (window.innerWidth > 768) {
+    } else if (window.innerWidth > 767) {
       header.classList.add("scroll-isMoving");
-      header.classList.remove("scroll-isMoving-Narrow");
     }
   }
-
-  // } else if ((window.scrollY > 0) && (window.innerWidth < 768)) {
-  //   header.classList.remove("scroll-isMoving");
-  //   header.classList.add("scroll-isMoving-Narrow");
-  // } else if ((window.scrollY > 0) && (window.outerWidth > 768)) {
-  //   header.classList.add("scroll-isMoving");
-  //   header.classList.remove("scroll-isMoving-Narrow");
-  // }
 
   let widthContent = document.querySelector(".header-content");
 
   if (window.outerWidth > 1366) {
     widthContent.style.maxwidth = "956.2px";
   }
-
-  // function EraseSectionClass() {
-  //   for (let i = 0; i < 5; i++) {
-  //     arrow_up.classList.remove(arrSections[i]);
-  //   }
-  // }
-
-  // arrSekcja.forEach(ar => arrow_up.classList.remove(arrSekcja[ar]));
-
-  // if ((window.scrollY > 0) & (window.scrollY < 500)) {
-  //   EraseSectionClass();
-  //   arrow_up.classList.add("section1");
-  // } else if (window.scrollY < 1200) {
-  //   EraseSectionClass();
-  //   arrow_up.classList.add("section2");
-  // } else if (window.scrollY < 2250) {
-  //   EraseSectionClass();
-  //   arrow_up.classList.add("section3");
-  // } else if (window.scrollY < 2900) {
-  //   EraseSectionClass();
-  //   arrow_up.classList.add("section4");
-  // } else if (window.scrollY > 2900) {
-  //   EraseSectionClass();
-  //   arrow_up.classList.add("section5");
-  // }
-
-  // if (window.outerWidth < window.innerWidth) {
-  //   widthContent.style.width = "960px";
-  //   // dla ekranu przeglądarki wiekszej od contentu - żeby width(position: fixed) nie odnosił się do okna przeglądarki a szerokości contentu.
-  //   // return widthContent.style.width;
-  // }
-
-  // if (window.scrollY > 0) {
-
-  // //swiper
-  // var Swiper = new Swiper(".swiper-container", {
-  //   // Optional parameters
-  //   direction: "horizonta",
-  //   loop: true,
-  //   autoplay: { delay: 3000 },
-
-  //   // If we need pagination
-  //   pagination: {
-  //     el: ".swiper-pagination",
-  //     clickable: true
-  //   }
-  // });
 });
 
 let arrows_up = document.querySelectorAll(".up");

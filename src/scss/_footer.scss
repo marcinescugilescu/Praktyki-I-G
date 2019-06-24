@@ -5,8 +5,9 @@
   margin: 0 auto;
   background-color: #242424;
   color: #848484;
-  font-family: "Mada Light";
-  font-size: 12px;
+  font-family: $font-2;
+  font-weight: 300;
+  font-size: $font-footer;
   footer {
     width: 100%;
     color: #8a8a8a;
@@ -15,16 +16,18 @@
       margin-left: 14%;
       left: 14%;
       text-align: left;
-      font-family: "Mada light";
-      font-size: 12px;
-      line-height: 21px;
+      font-family: $font-2;
+      font-weight: 300;
+      font-size: $font-footer;
+      line-height: $font-size-body*0.95;
       letter-spacing: 0.25px;
     }
     p + p {
       padding-top: 0px;
-      font-family: "Mada light";
-      font-size: 12px;
-      line-height: 19px;
+      font-family: $font-2;
+      font-weight: 300;
+      font-size: $font-footer;
+      line-height: $font-size-body*0.96;
       letter-spacing: 0.25px;
     }
   }

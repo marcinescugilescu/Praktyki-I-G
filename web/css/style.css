@@ -63,9 +63,6 @@ html {
   @media (min-width: 1366px) {
     html {
       font-size: 22px; } }
-  @media (min-width: 1600px) {
-    html {
-      font-size: 24px; } }
 
 body {
   font-family: "homenaje", sans-serif;
@@ -136,6 +133,50 @@ body {
   height: 0px;
   max-width: 1366px;
   margin: 0 auto; }
+  .header .header-menu-btn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 0px;
+    top: -70px;
+    z-index: 125;
+    outline: none;
+    opacity: 0.85; }
+    .header .header-menu-btn:hover {
+      opacity: 0.6; }
+    .header .header-menu-btn.no1 {
+      background-color: #62c017;
+      left: 50px;
+      font-size: 28px;
+      line-height: 26px; }
+    .header .header-menu-btn.no2 {
+      background-color: #8eb86c;
+      left: 0px;
+      margin-top: 50px;
+      font-size: 28px;
+      line-height: 26px; }
+    .header .header-menu-btn.no3 {
+      background-color: #7e8d72;
+      left: 50px;
+      margin-top: 100px;
+      font-size: 28px;
+      line-height: 26px; }
+    .header .header-menu-btn.no4 {
+      background-color: #8a8a8a;
+      left: 0px;
+      margin-top: 150px;
+      font-size: 28px;
+      line-height: 26px; }
+    @media (min-width: 768px) {
+      .header .header-menu-btn {
+        display: none; } }
+    .header .header-menu-btn.show-btn-header {
+      position: fixed;
+      top: 0px; }
+    .header .header-menu-btn .span {
+      width: 20px;
+      height: 2px;
+      background-color: #62c017; }
   .header .wrapper {
     width: 70%;
     height: inherit; }
@@ -144,13 +185,18 @@ body {
       display: block;
       width: 100%;
       max-width: 956.2px;
-      height: 95px;
+      height: 80px;
       left: 50%;
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%);
       z-index: 100;
       color: white;
-      opacity: 0.831; }
+      opacity: 0.831;
+      -webkit-transition: 0.3s background-color;
+      transition: 0.3s background-color; }
+      @media (max-width: 767px) {
+        .header .wrapper .header-content {
+          display: none; } }
       .header .wrapper .header-content.scroll-isMoving {
         position: fixed;
         left: 50%;
@@ -162,8 +208,6 @@ body {
         z-index: 130;
         background-color: #222222;
         height: 80px; }
-      .header .wrapper .header-content.scroll-isMoving-Narrow {
-        display: none; }
       .header .wrapper .header-content .green-box {
         position: absolute;
         top: 0px;
@@ -177,6 +221,17 @@ body {
         top: 25px;
         left: 0%;
         height: 95px; }
+        @media (max-width: 1365px) {
+          .header .wrapper .header-content a.header-logo {
+            -webkit-transform: scale(0.85);
+                    transform: scale(0.85); } }
+        @media (max-width: 1023px) {
+          .header .wrapper .header-content a.header-logo {
+            -webkit-transform: scale(0.7);
+                    transform: scale(0.7); } }
+        @media (max-width: 767px) {
+          .header .wrapper .header-content a.header-logo {
+            display: none; } }
       .header .wrapper .header-content ul.header-nav {
         position: absolute;
         display: -webkit-box;
@@ -189,6 +244,15 @@ body {
         height: 190px;
         left: 5%;
         z-index: 10; }
+        .header .wrapper .header-content ul.header-nav.show-other-menu {
+          position: fixed;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column; }
         .header .wrapper .header-content ul.header-nav li {
           display: block;
           width: 145px;
@@ -287,8 +351,10 @@ body {
         margin-top: 28px;
         margin-left: 22.5%;
         height: 52px;
-        font-family: "Mada Light";
+        font-family: "Mada", sans-serif;
+        font-weight: 300;
         font-size: 0.62rem;
+        line-height: 0.86rem;
         letter-spacing: 0.25px;
         z-index: 121; }
         .hero .hero-content .cookies p.text a {
@@ -302,14 +368,25 @@ body {
         right: 15%;
         z-index: 126;
         cursor: pointer;
+        text-align: center;
         color: white;
         background-color: #62c017;
         border-radius: 3px;
         border: none;
         text-decoration: none;
-        font-family: "Mada Light";
-        font-size: 14px;
+        font-size: 0.62rem;
+        line-height: 0.86rem;
+        font-family: "Mada", sans-serif;
+        font-weight: 300;
         letter-spacing: 0.25px; }
+        @media (max-width: 767px) {
+          .hero .hero-content .cookies button {
+            width: 70px;
+            right: 14%; } }
+        @media (max-width: 479px) {
+          .hero .hero-content .cookies button {
+            width: 55px;
+            right: 12%; } }
       .hero .hero-content .cookies .cookies-doll {
         position: absolute;
         margin-left: 16%;
@@ -317,6 +394,30 @@ body {
         width: 39px;
         height: 47px;
         z-index: 125; }
+        @media (max-width: 1365px) {
+          .hero .hero-content .cookies .cookies-doll {
+            -webkit-transform: scale(0.9);
+                    transform: scale(0.9); } }
+        @media (max-width: 1023px) {
+          .hero .hero-content .cookies .cookies-doll {
+            -webkit-transform: scale(0.8);
+                    transform: scale(0.8);
+            margin-left: 15%; } }
+        @media (max-width: 767px) {
+          .hero .hero-content .cookies .cookies-doll {
+            -webkit-transform: scale(0.7);
+                    transform: scale(0.7);
+            margin-left: 14%; } }
+        @media (max-width: 479px) {
+          .hero .hero-content .cookies .cookies-doll {
+            -webkit-transform: scale(0.55);
+                    transform: scale(0.55);
+            margin-left: 12%; } }
+        @media (max-width: 359px) {
+          .hero .hero-content .cookies .cookies-doll {
+            -webkit-transform: scale(0.4);
+                    transform: scale(0.4);
+            margin-left: 10; } }
 
 .mission {
   display: block;
@@ -335,7 +436,6 @@ body {
             transform: translateX(-50%); }
   .mission .mission-text {
     position: absolute;
-    font-family: "Mada Light";
     font-family: "Mada", sans-serif;
     font-weight: 300;
     font-size: 1rem;
@@ -354,58 +454,6 @@ body {
       font-size: 2.8rem;
       font-family: "Mada", sans-serif;
       font-weight: 900; }
-  .mission .site-nr {
-    position: absolute;
-    width: 8%;
-    height: 6%;
-    top: 40%;
-    right: 0%;
-    -webkit-transform: translateY(-60%);
-            transform: translateY(-60%);
-    text-align: center; }
-    .mission .site-nr:after {
-      content: "";
-      position: absolute;
-      display: block;
-      background-color: #000;
-      left: 0px;
-      top: 50px;
-      width: 100%;
-      height: 1px; }
-  .mission .page-prev-next {
-    position: absolute;
-    display: block;
-    right: 0%;
-    top: 75%;
-    width: 8%;
-    height: 100px;
-    z-index: 120; }
-    .mission .page-prev-next .line {
-      position: absolute;
-      display: block;
-      background-color: #000;
-      color: black;
-      left: 0%;
-      top: 20%;
-      width: 100%;
-      height: 1px;
-      z-index: 130; }
-    .mission .page-prev-next .up {
-      position: absolute;
-      display: block;
-      cursor: pointer;
-      right: 50%;
-      -webkit-transform: translateX(50%);
-              transform: translateX(50%);
-      top: -25%; }
-    .mission .page-prev-next .down {
-      cursor: pointer;
-      position: absolute;
-      display: block;
-      right: 50%;
-      top: 45%;
-      -webkit-transform: translateX(50%);
-              transform: translateX(50%); }
 
 .clients {
   position: relative;
@@ -502,9 +550,9 @@ body {
         font-family: "Mada", sans-serif;
         font-weight: 900; }
     .clients .clients-container .clients-subscription {
+      margin-top: 3%;
       font-size: 1rem;
       line-height: 1.22rem;
-      margin-top: 3%;
       font-family: "Mada", sans-serif;
       font-weight: 300;
       letter-spacing: -25; }
@@ -694,7 +742,7 @@ body {
           font-size: 0.63rem;
           line-height: 0.81rem;
           letter-spacing: -0.25px;
-          padding: 14px;
+          padding: 0.63rem;
           text-align: left; }
           @media (max-width: 767px) {
             .products .wrapper .icons .icon-over p {
@@ -958,10 +1006,22 @@ input {
     right: 13%;
     top: 13%;
     padding-left: 1.5%; }
+    @media (max-width: 1023px) {
+      .contact .btn-contact {
+        width: 24%; } }
+    @media (max-width: 767px) {
+      .contact .btn-contact {
+        width: 28%; } }
+    @media (max-width: 479px) {
+      .contact .btn-contact {
+        width: 32%; } }
+    @media (max-width: 359px) {
+      .contact .btn-contact {
+        width: 35%; } }
     .contact .btn-contact span {
       position: absolute;
       display: block;
-      right: 5%;
+      right: 4%;
       top: 8px;
       width: 15px;
       height: 22px; }
@@ -1146,8 +1206,9 @@ input {
   margin: 0 auto;
   background-color: #242424;
   color: #848484;
-  font-family: "Mada Light";
-  font-size: 12px; }
+  font-family: "Mada", sans-serif;
+  font-weight: 300;
+  font-size: 0.54rem; }
   .footer footer {
     width: 100%;
     color: #8a8a8a; }
@@ -1156,13 +1217,15 @@ input {
       margin-left: 14%;
       left: 14%;
       text-align: left;
-      font-family: "Mada light";
-      font-size: 12px;
-      line-height: 21px;
+      font-family: "Mada", sans-serif;
+      font-weight: 300;
+      font-size: 0.54rem;
+      line-height: 0.95rem;
       letter-spacing: 0.25px; }
     .footer footer p + p {
       padding-top: 0px;
-      font-family: "Mada light";
-      font-size: 12px;
-      line-height: 19px;
+      font-family: "Mada", sans-serif;
+      font-weight: 300;
+      font-size: 0.54rem;
+      line-height: 0.96rem;
       letter-spacing: 0.25px; }
